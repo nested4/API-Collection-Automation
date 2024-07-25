@@ -43,11 +43,11 @@ jobs:
         -d '{
           "personalizations": [
             {
-              "to": [{ "email": "your-email@example.com" }],
+              "to": [{ "email": "ihsan@vaultn.com" }],
               "subject": "Newman Test Report"
             }
           ],
-          "from": { "email": "your-email@example.com" },
+          "from": { "email": "ihsan@vaultn.com" },
           "content": [
             {
               "type": "text/html",
