@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Run Postman collection using Newman",
   "scripts": {
-    "test": "newman run Valentino Artisan Coffee House API.postman_collection.json -r htmlextra --reporter-htmlextra-export newman-report.html"
+    "test": "newman run ValentinoArtisanCoffeeHouseAPI.postman_collection.json -r htmlextra --reporter-htmlextra-export newman-report.html"
   },
   "devDependencies": {
     "newman": "^6.0.0",
