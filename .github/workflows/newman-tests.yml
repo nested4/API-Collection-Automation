@@ -22,7 +22,7 @@ jobs:
         node-version: '20'
 
     - name: Install dependencies
-      run: npm install
+      run: npm install --legacy-peer-deps
 
     - name: Run Newman tests
       run: npm test
@@ -31,7 +31,7 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: newman-report
-        path: newman-report.html
+        path: newman/newman-report.html
 
     - name: Send report via email
       env:
@@ -56,7 +56,7 @@ jobs:
           ],
           "attachments": [
             {
-              "content": "'"$(base64 newman-report.html)"'",
+              "content": "'"$(base64 newman/newman-report.html)"'",
               "type": "text/html",
               "filename": "report.html"
             }
